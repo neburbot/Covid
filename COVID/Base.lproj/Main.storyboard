@@ -54,7 +54,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1it-V3-faa">
                                                 <rect key="frame" x="0.0" y="0.0" width="235" height="30"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="case" translatesAutoresizingMaskIntoConstraints="NO" id="JV1-Du-7Ui">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JV1-Du-7Ui">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="o87-KQ-dXG"/>
@@ -83,7 +83,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="T0p-En-FUJ">
                                                 <rect key="frame" x="0.0" y="35" width="235" height="30"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="death" translatesAutoresizingMaskIntoConstraints="NO" id="haA-Cm-mLb">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="haA-Cm-mLb">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="7nv-sD-oB7"/>
@@ -112,7 +112,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jWN-cx-Xvb">
                                                 <rect key="frame" x="0.0" y="70" width="235" height="30"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recover" translatesAutoresizingMaskIntoConstraints="NO" id="wgw-ie-AMN">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wgw-ie-AMN">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="MGh-Vv-rTy"/>
@@ -171,10 +171,13 @@
                     <connections>
                         <outlet property="banderaImageView" destination="JNI-L7-aLu" id="wRX-t7-PWS"/>
                         <outlet property="buscarTextField" destination="Lkc-m5-bnO" id="x3W-iD-r5F"/>
+                        <outlet property="caseImageView" destination="JV1-Du-7Ui" id="Srl-D9-NIN"/>
                         <outlet property="casosLabel" destination="TVa-WX-XLT" id="sqC-iE-4Dv"/>
                         <outlet property="confirmadosTxt" destination="rMn-K7-cxs" id="BaF-Wn-m2s"/>
+                        <outlet property="deathImageView" destination="haA-Cm-mLb" id="JD4-Ab-rT4"/>
                         <outlet property="muertesLabel" destination="x77-Zi-Hb9" id="y9i-9M-v3s"/>
                         <outlet property="muertesTxt" destination="Y7I-Ji-zQf" id="dZ4-XT-Odz"/>
+                        <outlet property="recoverImageView" destination="wgw-ie-AMN" id="3qQ-aQ-a1E"/>
                         <outlet property="recuperadosLabel" destination="7TJ-ih-JIS" id="i56-ty-A5f"/>
                         <outlet property="recuperadosTxt" destination="Md7-7W-g2P" id="MGK-T8-G1A"/>
                     </connections>
@@ -185,9 +188,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="case" width="256" height="256"/>
-        <image name="death" width="128" height="128"/>
-        <image name="recover" width="256" height="256"/>
         <image name="virus" width="256" height="256"/>
     </resources>
 </document>

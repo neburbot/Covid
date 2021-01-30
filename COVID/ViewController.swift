@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var confirmadosTxt: UILabel!
     @IBOutlet weak var muertesTxt: UILabel!
     @IBOutlet weak var recuperadosTxt: UILabel!
+    @IBOutlet weak var caseImageView: UIImageView!
+    @IBOutlet weak var deathImageView: UIImageView!
+    @IBOutlet weak var recoverImageView: UIImageView!
     
     override func viewDidLoad() {
         
@@ -96,6 +99,10 @@ extension ViewController: CovidManagerDelegate {
             self.casosLabel.text = numberFormatter.string(from: NSNumber(value: covid.casos))
             self.muertesLabel.text = numberFormatter.string(from: NSNumber(value: covid.muertes))
             self.recuperadosLabel.text = numberFormatter.string(from: NSNumber(value: covid.reuperados))
+            
+            self.caseImageView.image = UIImage(imageLiteralResourceName: "case")
+            self.deathImageView.image = UIImage(imageLiteralResourceName: "death")
+            self.recoverImageView.image = UIImage(imageLiteralResourceName: "recover")
             
             let imageUrl = URL(string: covid.bandera)!
             let imageData = try! Data(contentsOf: imageUrl)
