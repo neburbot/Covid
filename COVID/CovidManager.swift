@@ -34,7 +34,9 @@ struct CovidManager {
                 else {
                     if let datosSeguros = data {
                         if let covid = self.parseJSON(covidData: datosSeguros) {
+                            print("Antes de actualizar")
                             self.delegado?.actualizarCovid(covid: covid)
+                            print("Despues de actualizar")
                         }
                     }
                 }

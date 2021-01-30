@@ -53,7 +53,7 @@ extension ViewController: UITextFieldDelegate {
             let actionErrorAceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
             alertError.addAction(actionErrorAceptar)
             self.present(alertError, animated: true, completion: nil)
-            return true
+            return false
         }
         
     }
@@ -73,7 +73,7 @@ extension ViewController: CovidManagerDelegate {
             case "A server with the specified hostname could not be found.":
                 descripcionError = "Error del servidor"
             default:
-                descripcionError = "Error insepecifico"
+                descripcionError = "Error inespecifico"
             }
             let alertError = UIAlertController(title: descripcionError, message: nil, preferredStyle: .alert)
             let actionErrorAceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
@@ -102,8 +102,8 @@ extension ViewController: CovidManagerDelegate {
             let image = UIImage(data: imageData)
             
             self.banderaImageView.image = image
-            
         }
+        
     }
     
 }
